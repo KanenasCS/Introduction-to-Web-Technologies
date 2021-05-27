@@ -1,0 +1,38 @@
+/* Navbar fixed at the top of the page */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  font-size: large;
+}
+
+/* Styling for the figure captions */
+figcaption {
+  background-color: white;
+  display: block;
+  float: left;
+  position: absolute;
+  bottom: 0;
+}
+
+figure {
+  position: relative;
+  float: left;
+}
+
+/* We 're adding some space at the top of the page for the fixed navbar */
+.container {
+  margin-top: 100px;
+}
+
+/* Media query to detect mobile in JS */
+@media only screen and (max-width: 760px) {
+  #detect-mobile {
+    display: none;
+  }
+}

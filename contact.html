@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <!-- CSS -->
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Internal CSS -->
+    <style>
+      h1 {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm" style="background-color:  rgb(18, 7, 163);">
+      <!-- Brand -->
+      <a class="navbar-brand" href="./index.html">
+        <img src="./img/logo.png" alt="Logo">
+      </a>
+      <!-- Links -->
+      <ul class="navbar-nav">
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="./index.html" id="navbardrop" data-toggle="dropdown">
+            Destinations
+          </a>
+          <div class="dropdown-menu" style="background-color: rgb(18, 7, 163);">
+            <a class="dropdown-item" href="./athens.html">Athens, Greece</a>
+            <a class="dropdown-item" href="./cavtat.html">Cavtat, Croatia</a>
+            <a class="dropdown-item" href="./florence.html">Florence, Italy</a>
+            <a class="dropdown-item" href="./monte-isola.html">Monte Isola, Italy</a>
+            <a class="dropdown-item" href="./kotor.html">Kotor, Montenegro</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>Contact us!</h1>
+          <form action="contact.html" method="POST">
+            <div class="form-group">
+              <label for="inputMail">Email address</label>
+              <input type="email" class="form-control" id="inputMail" aria-describedby="emailHelp" placeholder="Your email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="destinationOfInterest">Select destination of interest</label>
+              <select class="form-control" id="destinationOfInterest">
+                <option>Athens, Greece</option>
+                <option>Cavtat, Croatia</option>
+                <option>Florence, Italy</option>
+                <option>Monte Isola, Italy</option>
+                <option>Kotor, Montenegro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="formMessage">Your message</label>
+              <textarea class="form-control" id="formMessage" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <br>
+
+    </div>
+
+    <!-- Javascript -->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./js/javascript.js"></script>
+  </body>
+</html>
